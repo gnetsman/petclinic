@@ -7,7 +7,7 @@ node {
 
 
 
-def mvn(args) {
-    sh "${tool 'Maven 3.x'}/bin/mvn ${args}"
+def mvnw(args) {
+    sh "./mvnw ${args}"
 }
 
