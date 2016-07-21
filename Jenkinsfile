@@ -2,7 +2,7 @@
 stage 'Build'
 node {
     checkout scm
-    mvn 'clean compile'
+    mvnw 'clean compile'
 }
 
 
