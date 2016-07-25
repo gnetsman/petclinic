@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.springframework.samples</groupId>
     <artifactId>spring-petclinic</artifactId>
-    <version>4.2.6-SNAPSHOT</version>
+    <version>4.2.${build.number}-SNAPSHOT</version>
 
     <name>petclinic</name>
     <packaging>war</packaging>
@@ -313,6 +313,15 @@
                 <configuration>
                     <warName>petclinic</warName>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
+          <archive>
+             <index>true</index>
+             <manifest>
+                <addClasspath>true</addClasspath>
+             </manifest>
+             <manifestEntries>
+                <Implementation-Version>${build.number}</Implementation-Version>
+             </manifestEntries>
+          </archive>
                 </configuration>
             </plugin>
             <plugin>
