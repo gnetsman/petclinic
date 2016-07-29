@@ -1,3 +1,4 @@
 test
 New feature is here
 New feature is here, again
+New feature is here#2, again
